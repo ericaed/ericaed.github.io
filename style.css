@@ -6,6 +6,7 @@ html, body {
 
 ul {
   text-align: right;
+  font-size: medium;
 }
 
 h1 {
@@ -52,6 +53,7 @@ h1 {
   background-color: #fff;
   max-width: 1200px;
   margin-left: 50px;
+  animation: fadeIn 5s;
 }
 
 .jumbotron h2 {
