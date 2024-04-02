@@ -6,11 +6,11 @@ html, body {
 
 ul {
   text-align: right;
-  font-size: medium;
+  font-size: 25px;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 /*Sizing*/
@@ -26,6 +26,26 @@ h1 {
 
 .main {
     background-color: #ffc200;
+}
+
+.sub-container {
+  margin: 10px;
+  padding: 5px;
+}
+
+/*Fade Animation*/
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 /*Header Section*/
@@ -53,7 +73,7 @@ h1 {
   background-color: #fff;
   max-width: 1200px;
   margin-left: 50px;
-  animation: fadeIn 5s;
+  /*animation: fadeIn 5s;*/
 }
 
 .jumbotron h2 {
@@ -70,4 +90,62 @@ h1 {
   font-size: 16px;
   color: #666;
   margin-bottom: 0;
+}
+
+
+/*About Section*/
+
+.about {
+  padding: 30px 0px 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.about h2 {
+  font-size: 25px;
+  /*animation: fadeIn 10s;*/
+}
+
+.about li {
+  list-style: none;
+  display: inline-block;
+}
+
+.about li a {
+  color: #333;
+  margin:0;
+  border:0px;
+}
+
+
+/*Resume Section*/
+
+.resume {
+  padding: 30px 0px 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.resume h2 {
+  font-size: 25px;
+  /*animation: fadeIn 10s;*/
+}
+
+.resume h3 {
+  font-size: 20px;
+}
+
+.resume h3 span {
+  color: #c41230;
+}
+
+.resume li {
+  list-style: none;
+  display: inline-block;
+}
+
+.resume li a {
+  color: #333;
+  margin:0;
+  border:0px;
 }
