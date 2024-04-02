@@ -21,17 +21,3 @@ body {
 .sidebar a:hover {
   color: green;
 }
-
-main .sidebar{
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left 0.5s;
-  padding: 16px;
-  margin-left: 250px;
-}
