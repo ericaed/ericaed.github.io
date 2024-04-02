@@ -1,19 +1,15 @@
-function FadeInSection(props) {
-    const [isVisible, setVisible] = React.useState(true);
-    const domRef = React.useRef();
-    React.useEffect(() => {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => setVisible(entry.isIntersecting));
-      });
-      observer.observe(domRef.current);
-      return () => observer.unobserve(domRef.current);
-    }, []);
-    return (
-      <div
-        className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-        ref={domRef}
-      >
-        {props.children}
-      </div>
-    );
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
   }
+
+  window.addEventListener("scroll", reveal);
