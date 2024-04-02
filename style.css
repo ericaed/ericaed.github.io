@@ -16,7 +16,6 @@ body {
   font-size: 25px;
   color: #818181;
   display: block;
-  animation: fadeInLeft;
 }
 
 .sidebar a:hover {
