@@ -4,12 +4,6 @@ html, body {
   font-family: 'Libre Baskerville', sans-serif;
 }
 
-img {
-  margin: 10px auto;
-  height: auto;
-  width: auto;
-}
-
 ul {
   text-align: right;
 }
