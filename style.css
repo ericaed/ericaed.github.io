@@ -29,3 +29,9 @@ main .sidebar{
   font-size: 36px;
   margin-left: 50px;
 }
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin-left: 250px;
+}
