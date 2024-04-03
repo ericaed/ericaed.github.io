@@ -1,60 +1,150 @@
 <!DOCTYPE html lang="en">
 <html>
-    <title>My Site</title>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <script src="myscript.js"></script>
-    </head>
-    <body>
-        <!-- Header Component -->
-        <div class="header">
-            <div class="container">
-              <h1>My Portfolio.</h1>
-              <ul>
-                <li><a href="#">About</a></li><br>
-                <li><a href="#">Resume</a></li><br>
-                <li><a href="#">Projects</a></li><br>
-                <li><a href="#">Writing Samples</a></li><br>
-                <li><a href="#">Other</a></li><br>
-              </ul>
-            </div>
+<title>My Site</title>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="myscript.js"></script>
+    <script src="rellax.min.js"></script>
+</head>
+
+<body>
+    <!-- Header Component -->
+    <div class="header">
+        <div class="container">
+            <h1>My Portfolio.</h1>
+            <ul>
+                <li><a href="#about">About</a></li><br>
+                <li><a href="#resume">Resume</a></li><br>
+                <li><a href="#projects">Projects</a></li><br>
+                <li><a href="#writing">Writing Samples</a></li><br>
+                <li><a href="#other">Other</a></li><br>
+            </ul>
         </div>
-        <!-- End Header Component -->
+    </div>
+    <!-- End Header Component -->
 
-        <!-- Jumbotron Component -->
+    <!-- Jumbotron Component -->
+    <div class="jumbotron">
+        <div class="container reveal">
+            <h2>Welcome! I am<span> delighted to share</span> my work with you.</h2>
+        </div>
+    </div>
+    <!-- End Jumbotron Component -->
 
-        <div class="jumbotron">
-            <div class="container">
-                <div class="hideme">
-                    <h2>Welcome! I am<span> delighted to share</span> my work with you.</h2>
+    <!-- About Component -->
+    <div class="about" id="about">
+        <div class="container reveal">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <!-- End About Component -->
+
+    <!-- Resume Component -->
+    <div class="resume" id="resume">
+        <div class="container reveal">
+            <h2>Resume</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <!-- Start Resume Timeline -->
+            <section class="timeline">
+                <ol>
+                    <li>
+                        <div>
+                            <time>August 2016 - December 2019</time>
+                            <p>BA Economics<br>Miami University</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>January 2020 - March 2020</time>
+                            <p>Intern<br>Mayor of Cincinnati's Office</p>
+                            <time>January 2020 - May 2020</time>
+                            <p>Teaching Assistant<br>Miami University</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>August 2020 - June 2021</time>
+                            <p>AmeriCorps Fellow<br>Saga Education</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>August 2021 - May 2022</time>
+                            <p>Research Assistant<br>Miami University</p>
+                            <time>August 2021 - August 2023</time>
+                            <p>MA Economics<br>Miami University</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>October 2022 - December 2023</time>
+                            <p>Data Analyst<br>Legal Services Corporation</p>
+                        </div>
+                    </li>
+                    <li></li>
+                </ol>
+            </section>
+            <section>
+                <div class="parallax">
+                    <p>CSS</p>
                 </div>
-            </div>
+            </section>
         </div>
-
-        <!-- End Jumbotron Component -->
-
-        <div class="about">
-            <div class="container">
-                <div class="hideme">
-                    <h2>About Me</h2>
-                    <p>I am a data science professional looking for new, challenging experiences.</p>
-                </div>
-            </div>
+        <!-- End Resume Timeline -->
+    </div>
+    <!-- End Resume Component -->
+    <!-- Projects Component -->
+    <div class="projects" id="projects">
+        <div class="container reveal">
+            <h2>Projects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
         </div>
+    </div>
+    <!-- End Projects Component -->
 
-        <div class="resume">
-            <div class="container">
-                <h2>Resume</h2>
-                <!-- Resume Education Component -->
-                    <div class="sub-container">
-                        <h3>MA, Economics<span> Miami University </span> - Oxford, Ohio</h3>
-                        <h3>BA, Economics<span> Miami University </span> - Oxford, Ohio</h3>
-                    </div>
-            </div>
+    <!-- Writings Sample Component -->
+    <div class="writing" id="writing">
+        <div class="container reveal">
+            <h2>Writing Samples</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
         </div>
+    </div>
+    <!-- End Writing Sample Component -->
 
-    </body>
+    <!-- Other Component -->
+    <div class="other" id="other">
+        <div class="container reveal">
+            <h2>Other</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <!-- End Other Component -->
+</body>
+
 </html>
